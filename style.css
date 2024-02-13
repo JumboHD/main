@@ -169,6 +169,12 @@ body {
  .valentines-day:hover .text {
    transform: translateY(-50px);
  }
+@media only screen and(max-width:800px)
+{
+   .card{
+      margin-left:60px
+   }
+}
  
  
 
