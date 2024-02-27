@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Artikli - Cvjecara Nahida</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="header">
+
+        
+        <div class="container">
+            <div class="navbar">
+                <h1 class="logo">Cvjećara Nahida</h1>
+                <nav>
+                    
+                    <ul id="MenuItems">
+                        <li><a href="/">Pocetna</a></li>
+                        <li><a href="/Artikli">Artikli</a></li>
+                        <li><a href="/Dekoracija_vjencanja">Vjenčanja</a></li>
+                        <li><a href="/O-nama">O nama </a></li>
+                        <li><a href="/Kontakt">Kontakt </a></li>
+                        <li class="cart">
+                            <a href="/cart">
+                                <img src="Slike/cart.png" width="35px" height="35px"><span class="cartAmount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="Slike/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+
+        </div>
+    </div>
+       <div class="pozadina">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Slike/artikli/buket33.jpg" width="400px" height ="550px" id="MainImg">
+                    <div class="small-img-group2">
+                        <div class="small-img-col">
+                            <img src="Slike/artikli/buket33.jpg" class="small-img" width="120" height="150">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="Slike/artikli/buket33-2.jpg" class="small-img"width="120" height="150">
+
+                        </div>
+                        <div class="small-img-col">
+                            <img src="Slike/artikli/buket33-3.jpg" class="small-img"width="120" height="150">
+                        </div>
+                        <div class="small-img-col">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+                <div class="col-22" >
+                    
+                    <h1>Buket-33</h1>
+                    <h4>30 KM</h4>
+                    
+                    <a href="#" class="add-cart cart2">Dodaj u korpu</a>
+                    <h3>Opis</h3>
+                    <p>Buket</p>
+                    <p></p>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="small-container">
+            <h2 class="title">Dodatni pokloni</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="Slike/artikli/medo.jpg" >
+                    <h4>Medvjedic</h4>
+                    <p>25KM</p>
+                    <a href="#" class="add-cart cart2">Dodaj u korpu</a>
+
+                </div>
+                <div class="col-4">
+                    <img src="Slike/artikli/milka.jpg" >
+                    <h4>Milka cokolada</h4>
+                    <p>5KM</p>
+                    <a href="#" class="add-cart cart2">Dodaj u korpu</a>
+                </div>
+                <div class="col-4">
+                    <img src="Slike/artikli/bombonjera.jpg" >
+                    <h4>Bombonjera</h4>
+                    <p>10KM</p>
+                    <a href="#" class="add-cart cart2">Dodaj u korpu</a>
+                </div>
+                <div class="col-4">
+                    <img src="Slike/artikli/srce.jpg" >
+                    <h4>Srce Love you</h4>
+                    <p>12KM</p>
+                    <a href="#" class="add-cart cart2">Dodaj u korpu</a>
+                </div>
+                
+            </div>
+        </div>
+        
+       </div>
+        
+        
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Kontakt</h3>
+                        <p>063974322</p>
+                <p>062450105</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Radno vrijeme</h3>
+                        <p>09:00-17:00</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Lokacija</h3>
+                        <p>Novi Travnik Hanumina 1 E</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Zapratite nas</h3>
+                        <ul>
+                           <a href="https://www.facebook.com/profile.php?id=100063555123752">Facebook</a> 
+                             <br> <a href="https://www.instagram.com/cvjecaranahida/">Instagram</a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2022 - Velaludin</p>
+            </div>
+        </div>
+        
+        <script>
+            let products= [
+    {
+        name:'Buket33',
+        tag:'buket33',
+        price: 30,
+        inCart: 0
+
+    },
+    {
+        name:'Medo',
+        tag:'medo',
+        price: 25,
+        inCart: 0
+    },
+    {
+        name:'Milka',
+        tag:'milka',
+        price: 5,
+        inCart: 0
+    },
+    {
+        name:'Bombonjera',
+        tag:'bombonjera',
+        price: 10,
+        inCart: 0
+    },
+    {
+        name:'Srce',
+        tag:'srce',
+        price: 12,
+        inCart: 0
+    },
+
+   
+];
+
+        </script>
+        <script src="main.js"></script>
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){ 
+            
+                if( MenuItems.style.maxHeight=="0px")
+                {
+                     MenuItems.style.maxHeight="210px"
+                }else{
+                     MenuItems.style.maxHeight="0px"
+                }
+            }
+        </script>
+        <script>
+            var MainImg=document.getElementById('MainImg');
+            var smallimg=document.getElementsByClassName('small-img')
+            smallimg[0].onclick=function(){
+                MainImg.src=smallimg[0].src;
+            }
+            smallimg[1].onclick=function(){
+                MainImg.src=smallimg[1].src;
+            }
+            smallimg[2].onclick=function(){
+                MainImg.src=smallimg[2].src;
+            }
+            smallimg[3].onclick=function(){
+                MainImg.src=smallimg[3].src;
+            }
+            
+
+
+        </script>
+    </body>
+</html>
